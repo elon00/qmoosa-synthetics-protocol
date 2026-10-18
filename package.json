@@ -1,0 +1,29 @@
+{
+  "name": "@qmoosa/synthetics-protocol",
+  "version": "1.0.0",
+  "description": "QMOOSA Synthetics Protocol — Pooled Debt Ledger, Zero-Slippage Synthetics Exchange & Collateral Contracts",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/protocol.test.mjs && cd contracts && forge test -vv",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "synthetics",
+    "derivatives",
+    "pooled-debt",
+    "zero-slippage",
+    "solidity",
+    "foundry",
+    "defi"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
